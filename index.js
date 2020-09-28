@@ -205,7 +205,7 @@ if (config.http_api_key) {
 }
 app.use('/wallet', walletRouter);
 
-app.listen(config.http_port, config.http_bind_address, () => {
-  console.log(`Hathor Wallet listening on ${config.http_bind_address}:${config.http_port}...`);
+app.listen(config.http_port, () => {
+  console.log(`Hathor Wallet listening on port:${config.http_port}...`);
 });
 

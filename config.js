@@ -1,7 +1,9 @@
+const port = process.env.PORT || 8000
+
+
 module.exports = {
   // HTTP API Settings
-  http_bind_address: 'localhost',
-  http_port: 8000,
+  http_port: port,
 
   // Uncomment the following line to enable API Key Auth.
   // http_api_key: 'YOUR_PRIVATE_KEY',
